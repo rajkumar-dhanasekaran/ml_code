@@ -1,0 +1,66 @@
+  290  sudo git
+  291  git config --global user.name
+  292  git config --global user.email
+  293  git config --global core.autocrlf ture
+  294  git config --global core.autocrlf true
+  295  git config --global core.autocrlf true
+  296  git config --global col.ui auto
+  297  git log
+  303  cd Documents/
+  305  ls -l
+  306  cd ml_code/
+  307  ls 
+  309  git init
+  310  git status
+  312  git add .
+  313  git status
+  314  git commit -m "Initial version of learning ml using python"
+  315  git status
+  316  git diff --stat
+  317  git diff HEAD
+  320  git diff --color-words
+  321  git diff --staged
+  322  git log
+  323  git log --oneline
+  324  git log --patch
+  325  git log --stat
+  326  git log --patch --oneline
+  328  git log --graph --all --decorate --oneline
+  329  touch .gitignore
+  330  git add .
+  331  git status
+  332  git commit -m "Added ignore file"
+  333  git log --oneline
+  334  git branch ml-code-branh-testing
+  335  git branch -d ml-code-bran-testing
+  336  git branch -d ml-code-branh-testing
+  337  git branch
+  338  git remote add sendtogithub https://github.com/rajkumar-dhanasekaran/
+  339  git remote -v
+  340  git remote -r
+  341  git branch -r
+  342  git push origin
+  343  git remote seturl sendtogithub https://github.com/rajkumar-dhanasekaran/hello-world
+  344  git remote rm sendtogithub
+  345  git remote -r
+  346  git remote -v
+  347  git remote add origin https://github.com/rajkumar-dhanasekaran/hello-world
+  348  git remote -v
+  349  git branch -r
+  350  git push origin
+  352  git remote rm origin
+  353  git remote add origin https://github.com/rajkumar-dhanasekaran/ml_code
+  354  git remote -v
+  355  git push origin
+  356  git branch
+  357  git branch checkout
+  358  git branch
+  359  git push origin
+  360  git push origin/master
+  361  git pull origin
+  362  git checkout master
+  363  git pull origin
+  364  git reflog
+  365  history
+  366  history > /githubcommands.txt
+  367  history > /Users/Cipher/Documents/ml_code/githubcommands.txt
