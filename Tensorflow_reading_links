@@ -1,0 +1,17 @@
+
+
+#Tensorflow download and installation instructions. Usage. Hello, World!
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md
+
+#Try your first TensorFlow program
+https://github.com/tensorflow/tensorflow
+
+#Tensorflow - Classification problem - Tutorial, along with sample code
+https://www.tensorflow.org/versions/r0.12/tutorials/wide/index.html
+# Sample to refer to predict - Link also have Linear Regression model sample code
+https://www.tensorflow.org/versions/r0.12/tutorials/input_fn/index.html#making-predictions
+
+#Tensorflow - Tutorial for using Deep Learning model - DNN
+https://www.tensorflow.org/versions/r0.12/tutorials/wide_and_deep/index.html
+#Full code
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/learn/wide_n_deep_tutorial.py
