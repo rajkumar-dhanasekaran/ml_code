@@ -76,3 +76,11 @@ forecast <- predict(m, future)
 plot(m, forecast)
 
 #decreasing trend changepoint
+m <- prophet(df, changepoint.prior.scale = 0.001)
+forecast <- predict(m, future)
+plot(m, forecast)
+
+#specifying the locations of changepoints
+m <- prophet(df, changepoints = c(as.Date('2014-01-01')))
+forecast <- predict(m, future)
+plot(m, forecast)
