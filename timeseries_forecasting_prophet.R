@@ -38,3 +38,33 @@ tail(forecast[c('ds', 'yhat', 'yhat_lower', 'yhat_upper')])
 
 plot(m, forecast)
 prophet_plot_components(m, forecast)
+
+#Forecasting Growth - with a specified carrying capacity
+
+
+wp_trend("R_(programming_language)", file="example_wp_R.csv", from = "2007-01-01", to="2017-01-31")
+
+r_prog_lang <- wp_load( file="example_wp_R.csv" )
+colnames(r_prog_lang)
+nrow(r_prog_lang)
+head(r_prog_lang)
+
+df <- read.csv('example_wp_R.csv') 
+df <- df[df$count != 0,]
+head(df)
+df$y <- log(df$count)
+
+df <- df[,c(1,8)]
+nrow(df)
+head(df)
+colnames(df)<-c('ds','y')
+
+df$cap <- 8.5
+
+m <- prophet(df, growth = 'logistic')
+
+future <- make_future_dataframe(m, periods = 1826)
+future$cap <- 8.5
+fcst <- predict(m, future)
+plot(m, fcst)
+
