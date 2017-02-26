@@ -68,3 +68,11 @@ future$cap <- 8.5
 fcst <- predict(m, future)
 plot(m, fcst)
 
+#Trend Changepoints - Adjust trend flexibity
+#peyton_manning dataset
+
+m <- prophet(df, changepoint.prior.scale = 0.5)
+forecast <- predict(m, future)
+plot(m, forecast)
+
+#decreasing trend changepoint
