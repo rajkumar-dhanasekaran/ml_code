@@ -1,9 +1,8 @@
-
 # coding: utf-8
 
 # In[1]:
 
-#https://www.dataquest.io/blog/machine-learning-python/
+# https://www.dataquest.io/blog/machine-learning-python/
 import pandas
 
 
@@ -119,7 +118,7 @@ plot_columns
 
 # In[ ]:
 
-plt.scatter(x=plot_columns[:,0],y=plot_columns[:,1],c=labels)
+plt.scatter(x=plot_columns[:, 0], y=plot_columns[:, 1], c=labels)
 
 
 # In[ ]:
@@ -139,7 +138,11 @@ columns = games.columns.tolist()
 
 # In[ ]:
 
-columns = [c for c in columns if c not in ["bayes_average_rating","average_rating","type","name"]]
+columns = [
+    c
+    for c in columns
+    if c not in ["bayes_average_rating", "average_rating", "type", "name"]
+]
 
 
 # In[ ]:
@@ -149,7 +152,7 @@ columns
 
 # In[ ]:
 
-target = "average_rating" 
+target = "average_rating"
 
 
 # In[ ]:
@@ -181,7 +184,7 @@ model = LinearRegression()
 
 # In[ ]:
 
-model.fit(train[columns],train[target])
+model.fit(train[columns], train[target])
 
 
 # In[ ]:
@@ -206,12 +209,12 @@ from sklearn.ensemble import RandomForestRegressor
 
 # In[ ]:
 
-model = RandomForestRegressor(n_estimators=100,min_samples_leaf=10,random_state=1)
+model = RandomForestRegressor(n_estimators=100, min_samples_leaf=10, random_state=1)
 
 
 # In[ ]:
 
-model.fit(train[columns],train[target])
+model.fit(train[columns], train[target])
 
 
 # In[ ]:
@@ -226,5 +229,4 @@ mean_squared_error(predictions, test[target])
 
 # In[ ]:
 
-#explore using SVM, ensemble techniques, predict other columns
-
+# explore using SVM, ensemble techniques, predict other columns

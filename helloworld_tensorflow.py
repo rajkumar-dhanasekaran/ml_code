@@ -1,13 +1,14 @@
 import tensorflow as tf
-hello = tf.constant('Hello, TensorFlow!')
+
+hello = tf.constant("Hello, TensorFlow!")
 sess = tf.Session()
-print(sess.run(hello))
+print (sess.run(hello))
 
 a = tf.constant(10)
 b = tf.constant(32)
-print(sess.run(a + b))
+print (sess.run(a + b))
 
-#Another version
+# Another version
 # import tensorflow
 import tensorflow as tf
 
