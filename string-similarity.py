@@ -19,6 +19,7 @@ def clean_string(text):
     return text
 
 cleaned = list(map(clean_string,sentences))
+print (cleaned)
 
 vectorizer = CountVectorizer().fit_transform(cleaned)
 vectors = vectorizer.toarray()
